@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  box-sizing: border-box;
+  color: #000;
+  text-decoration: none;
+}
+body {
+  overflow: hidden;
+}
+.wrapper {
+}
+.header {
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px rgba(66, 66, 66, 0.4);
+}
+.container {
+  max-width: 1310px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header-input {
+  display: flex;
+  align-items: center;
+}
+.header-input > input {
+  width: 193px;
+  height: 40px;
+  border: none;
+  background: #c4c4c4;
+  border-radius: 21px;
+}
+.header-nav {
+  display: flex;
+}
+.nav-item {
+  font-size: 24px;
+  padding: 26px 0 25px;
+  display: flex;
+  align-items: center;
+  line-height: 29px;
+  margin-left: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.nav-item:hover .nav-item__dropdown {
+  display: flex;
+}
+.nav-item__dropdown > a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.nav-item__dropdown > a + a {
+  margin-top: 16px;
+}
+.nav-item__dropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: -62px;
+  background: #ffffff;
+  border: 1px solid rgba(66, 66, 66, 0.4);
+  border-radius: 4px;
+  padding: 32px 24px;
+  width: 229px;
+}
